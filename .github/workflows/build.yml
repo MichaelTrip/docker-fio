@@ -19,13 +19,13 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}/fiocontainer
+  IMAGE_NAME: ${{ github.repository }}
 
 
 jobs:
 
 
-  build_mate:
+  build_fio_container:
 
     runs-on: ubuntu-latest
     permissions:
